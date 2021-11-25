@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hellow</title>
+    <url>/2021/11/19/Hellow/</url>
+    <content><![CDATA[<p>本站为个人建立，旨在为COMSOL新手提供便于学习的案例。</p>
+<p>本站所有案例均使用COMSOL试用版计算，所有案例仅用于学习交流，请下载后尽快删除，JOSIM不为任何人使用COMSOL软件提供版权责任。</p>
+<p>如果有疑问请发邮件至<a href="mailto:&#56;&#x34;&#x37;&#57;&#53;&#x34;&#x30;&#55;&#x36;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#109;">&#56;&#x34;&#x37;&#57;&#53;&#x34;&#x30;&#55;&#x36;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#109;</a>，或在文章下留言，感谢大家支持。</p>
+<p>如果对你有用，请扫描如下二维码支持本项目，感谢打赏！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>参考书目</title>
+    <url>/2021/11/21/%E5%8F%82%E8%80%83%E4%B9%A6%E7%9B%AE/</url>
+    <content><![CDATA[<h1 id="参考书目"><a href="#参考书目" class="headerlink" title="参考书目"></a>参考书目</h1><p>COMSOL采用有限元方法进行多物理场耦合数值模拟。在使用COMSOL做数值模拟之前应该对模拟对象和有限元方法具有基础的了解。我这里收集了一些参考书，希望可以给大家提供帮助。以下所有图书均来自<a href="https://book4you.org/">Z-library</a>。你可以在本网页下载，或在Z-library网站下载，由Z-library提供图书版权。<u>如果发现我提供的以下图书有版权问题，请直接邮件联系博主。</u></p>
+<ol>
+<li>罗伯特·D·库克, 戴维·S·马尔库斯, 迈克尔·E·普利沙,等. 有限元分析的概念与应用 (第四版)[M]. 西安交通大学出版社, 2007. 链接: <a href="https://pan.baidu.com/s/1e8QuQuWVothqwtA6YzV6WA">https://pan.baidu.com/s/1e8QuQuWVothqwtA6YzV6WA</a> 提取码: uwwa </li>
+<li>王刚, 安琳. COMSOL Multiphysics工程实践与理论仿真:多物理场数值分析技术[M]. 电子工业出版社, 2012. 链接: <a href="https://pan.baidu.com/s/174quuvN0EvapKEyyA6X2ew">https://pan.baidu.com/s/174quuvN0EvapKEyyA6X2ew</a> 提取码: y2m9 </li>
+<li>Layla S. Mayboudi, Geometry Creation and Import With COMSOL Multiphysics[M]. 2020. 链接: <a href="https://pan.baidu.com/s/1xucdDMslGrZjZUfhV57qxw">https://pan.baidu.com/s/1xucdDMslGrZjZUfhV57qxw</a> 提取码: hwd5 </li>
+<li>Layla S. Mayboudi, Comsol Heat Transfer Models[M]. 2019. 链接: <a href="https://pan.baidu.com/s/1EGtsa9QbQ4obMwopDbwdAg">https://pan.baidu.com/s/1EGtsa9QbQ4obMwopDbwdAg</a> 提取码: ya3d </li>
+<li>Armen Gulian, Shortcut to Superconductivity Superconducting Electronics via COMSOL Modeling  [M]. 2020. 链接: <a href="https://pan.baidu.com/s/1l3vA6pxP1lpcO3zO4fupew">https://pan.baidu.com/s/1l3vA6pxP1lpcO3zO4fupew</a> 提取码: 6yr5 </li>
+<li>Tabatabaian, Mehrzad, COMSOL5 for engineers[M]. 2016.  链接: <a href="https://pan.baidu.com/s/12VD05Q9la2acr-elkZ3WXw">https://pan.baidu.com/s/12VD05Q9la2acr-elkZ3WXw</a> 提取码: 3jg9 </li>
+<li>Heinrich, Juan C. Pepper, Darrell W, The finite element method  basic concepts and applications with MATLAB, MAPLE, and COMSOL[M]. 2017. 链接: <a href="https://pan.baidu.com/s/1_I6eRlaD7cickmP2eGuLjA">https://pan.baidu.com/s/1_I6eRlaD7cickmP2eGuLjA</a> 提取码: 6mbh </li>
+</ol>
+<h1 id="Z-library简介"><a href="#Z-library简介" class="headerlink" title="Z-library简介"></a>Z-library简介</h1><p>Z-Library 是一个数字图书馆项目，提供大量书籍、文章和其他已出版内容的免费访问。该平台于 2009 年推出，标榜自己是“世界上最大的电子书图书馆”。目前，该网站拥有超过400万本数字图书，包括公共领域的文本和版权作品。这些不同的 Z-Library 书籍和文章可以多种流行的电子书格式下载，包括 PDF 和 EPUB。提供的书籍包括小说和非小说出版物，同时包含书籍和文章有助于使其成为学生和其他学术界人士越来越受欢迎的资源。用户可以通过首页的搜索栏搜索Z Library图书和文章。这提供了按书名、作者姓名、ISBN 或 MD5 进行搜索的选项，从而非常容易找到您要查找的电子书。</p>
+]]></content>
+      <tags>
+        <tag>参考书目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>三维盖板圆周运动案例</title>
+    <url>/2021/11/21/%E4%B8%89%E7%BB%B4%E7%9B%96%E6%9D%BF%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%E6%A1%88%E4%BE%8B/</url>
+    <content><![CDATA[<h1 id="三维盖板圆周运动案例"><a href="#三维盖板圆周运动案例" class="headerlink" title="三维盖板圆周运动案例"></a>三维盖板圆周运动案例</h1><img src="/2021/11/21/%E4%B8%89%E7%BB%B4%E7%9B%96%E6%9D%BF%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%E6%A1%88%E4%BE%8B/fig1.png" class="">
+
+<h2 id="计算设置"><a href="#计算设置" class="headerlink" title="计算设置"></a>计算设置</h2><p>在本案例中，模拟对象是一个三维盖板圆周运动过程。该例中，一个半径1m高度1m的圆桶，充满机油，圆桶盖板与机油充分接触，盖板以角速度$\Omega$ 的速度旋转。</p>
+<p>因为COMSOL中三维流动设置壁移动时只能设置平移速度，因此需要将圆周运动的速度投影到直角坐标系中。上盖板上$(x,y)$点处$x$方向和$y$方向分速度计算公式如下：</p>
+<p>半径：$R=\sqrt{x^2+y^2}$</p>
+<p>圆周角度: $\theta=arctan(y/x)$</p>
+<p>$x$方向和$y$方向分速度分别为：</p>
+<p>$u=-\Omega\times R\times sin(\theta)$</p>
+<p>$v=\Omega \times R \times cos(\theta)$</p>
+<p>其中，COMSOL内置了函数 <strong>atan2</strong> 用于计算四象限中的反正切函数，因此在COMSOL变量中设置为$\theta=atan2(y,x)$即可。</p>
+<img src="/2021/11/21/%E4%B8%89%E7%BB%B4%E7%9B%96%E6%9D%BF%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%E6%A1%88%E4%BE%8B/fig2.png" class="">
+
+<p>将以上两个分速度放入 <strong>层流</strong> 模块的 <strong>壁2</strong> 中 <strong>壁移动</strong> &gt;<strong>平移速度</strong> 的各分速度即可。另外需注意，应该在 <strong>压力点约束</strong> 中选择任一点作为压力约束点，以便于计算。</p>
+<img src="/2021/11/21/%E4%B8%89%E7%BB%B4%E7%9B%96%E6%9D%BF%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%E6%A1%88%E4%BE%8B/fig3.png" class="">
+
+<h2 id="案例下载"><a href="#案例下载" class="headerlink" title="案例下载"></a>案例下载</h2><p>链接: <a href="https://pan.baidu.com/s/1ESJrTOwxoQ0RlLEuj0JKVQ">https://pan.baidu.com/s/1ESJrTOwxoQ0RlLEuj0JKVQ</a> 提取码: 6zxn </p>
+]]></content>
+      <tags>
+        <tag>COMSOL算例</tag>
+        <tag>流动</tag>
+        <tag>壁移动</tag>
+        <tag>层流</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>多孔介质材料脱水</title>
+    <url>/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/</url>
+    <content><![CDATA[<h2 id="多孔介质材料脱水"><a href="#多孔介质材料脱水" class="headerlink" title="多孔介质材料脱水"></a>多孔介质材料脱水</h2><p>多孔介质中水分的蒸发是食品、造纸、木材、垃圾处理等工业中的重要过程。本算例要计算的内容为，在一个空间里面，将木材的含水率从40%降到10%。过程为：先用换热器和内部风扇将木材堆加热，直至木材中心温度比表面温度低10摄氏度左右，然后将空间抽真空（0.15个大气压），直至木材中心温度降低到该压力下的沸点。</p>
+<p>在该算例中有以下几个要点：</p>
+<ul>
+<li>采用湿蒸汽扩散、湿空气传热和层流三个模块进行模拟；</li>
+<li>每个模块中都将木块设为多孔介质，其中的参数仅为计算演示，不对数据可靠性负责；</li>
+<li>该计算采用二维简化模型；</li>
+<li>计算分为两步：第一步采用高温气流将木材中水分蒸发，当中心温度比表面温度低10℃时停止，第二步停止通风，降低空间内压力，使木材中水分继续蒸发并带走热量，直至含水率继续降低。</li>
+<li>本计算仅做示例只用，其中数字与计算要求不完全相符。</li>
+</ul>
+<h3 id="设置中的注意点"><a href="#设置中的注意点" class="headerlink" title="设置中的注意点"></a>设置中的注意点</h3><ol>
+<li><p>本算例参考COMSOL官网算例 <a href="https://cn.comsol.com/model/evaporation-in-porous-media-with-large-evaporation-rates-33731">多孔介质中的大蒸发率蒸发</a> 进行设置；</p>
+</li>
+<li><p>本算例中，在研究（study）中设置了3个计算步骤。步骤1为稳态，步骤2-3都是瞬态。COMSOL中在同一个<strong>研究</strong>里设置不同的计算步骤时，求解器中“Solution Store 1（sol2）”将用来存储每一个中间步骤的求解结果。当步骤1完成时，sol2将保存步骤1结果，默认步骤2将使用步骤1 的结果作为初始值；当步骤2 计算结束后，sol2将保存步骤2结果，步骤3将使用步骤2 的结果作为初始值。因此如果要在不同的时间之间改变边界条件，可以让求解器分别求解不同的步骤，在步骤之间调整边界条件。</p>
+</li>
+<li><p>在步骤1中，勾选<strong>层流</strong>和湿蒸汽传热模块，并在多物理场耦合中勾选<strong>非等温流</strong>。因为该蒸发过程中，水蒸气的扩散对气流的流动和传热影响非常小，因此可以先计算流动传热，并将其结果作为之后计算的初始值。实际上也可以采用全耦合求解，但是全耦合求解需要注意两个问题，第一全耦合求解的复杂程度更高，可能会容易发生发散，第二如果采用全耦合计算，各模块的边界条件应该采用函数形式，不可以直接设置一个跟初始值不一致的值。</p>
+<img src="/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/fig1.png" class=""></li>
+<li><p>在步骤2中，时间和求解器设置如下。</p>
+<img src="/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/fig2.png" class=""></li>
+<li><p>在步骤3中，时间和求解器设置如下。<strong>请注意输出时间的第一个值应当是步骤2输出时间的最后一个值。</strong></p>
+<img src="/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/fig3.png" class=""></li>
+<li><p>在本算例中，设置了阶跃函数 rm1 用来控制出口处压力的变化。</p>
+</li>
+<li><p>计算步骤简要说明如下：</p>
+<p>7.1 层流模型设置好入口流速u0，出口表压压力为0；</p>
+<p>7.2 在步骤2上右击，选择 <strong>计算到选定项</strong>；</p>
+<p>7.3 在层流模型中，将出口表压设置为 0-15000*rm1((t-50)/20);</p>
+<p>7.4 在步骤3上右击，选择 <strong>计算选定步骤</strong>。</p>
+</li>
+<li><p>在<strong>结果</strong>中，数据集选择 <strong>sol1</strong>则显示50~1000s结果，如果选择 <strong>sol2</strong> 则显示结果为0~50s结果。</p>
+</li>
+</ol>
+<h3 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h3><p>Github链接： <a href="https://github.com/sylvesterlynn/comsol_examples/raw/main/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4.mph">多孔介质材料脱水.mph</a></p>
+<p>百度网盘链接： 链接: <a href="https://pan.baidu.com/s/1CEZTySQ5ctHeJM5UrAm2qg">https://pan.baidu.com/s/1CEZTySQ5ctHeJM5UrAm2qg</a>  提取码: yxaq </p>
+]]></content>
+      <tags>
+        <tag>COMSOL算例</tag>
+        <tag>流动</tag>
+        <tag>湿蒸汽扩散</tag>
+        <tag>多孔介质</tag>
+        <tag>蒸发</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>相变吸热过程算例</title>
+    <url>/2021/11/21/%E7%9B%B8%E5%8F%98%E5%90%B8%E7%83%AD%E8%BF%87%E7%A8%8B%E7%AE%97%E4%BE%8B/</url>
+    <content><![CDATA[<h1 id="相变吸热过程算例"><a href="#相变吸热过程算例" class="headerlink" title="相变吸热过程算例"></a>相变吸热过程算例</h1><img src="/2021/11/21/%E7%9B%B8%E5%8F%98%E5%90%B8%E7%83%AD%E8%BF%87%E7%A8%8B%E7%AE%97%E4%BE%8B/fig1.png" class="">
+
+<h2 id="计算设置"><a href="#计算设置" class="headerlink" title="计算设置"></a>计算设置</h2><p>在本算例中将计算一个管外相变材料吸热相变过程。如上图所示，管内流体为水，从上向下流动，流速为$0.1 m/s$，入口温度为$51℃$，管壁为不锈钢，管外包覆$20 mm$厚的相变吸热材料，设该材料的相变温度为$50 ℃$，相变潜热为$333 kJ/kg$ ，两相之间的转变间隔为$1 K$。相变材料外壁为对流换热表面，传热系数为$h=10 W/m^2K$ ，环境温度为$20 ℃$。</p>
+<ol>
+<li><p>本算例由 <strong>非等温流-层流</strong> 或者 <strong>层流-流体传热-多物理场</strong>组成。</p>
+</li>
+<li><p>在材料中添加相变前后的材料性质。本例中假设相变前后密度、导热系数和密度不变。</p>
+</li>
+</ol>
+<img src="/2021/11/21/%E7%9B%B8%E5%8F%98%E5%90%B8%E7%83%AD%E8%BF%87%E7%A8%8B%E7%AE%97%E4%BE%8B/fig2.png" class="">
+
+<ol start="3">
+<li>流体场设置如下：</li>
+</ol>
+<img src="/2021/11/21/%E7%9B%B8%E5%8F%98%E5%90%B8%E7%83%AD%E8%BF%87%E7%A8%8B%E7%AE%97%E4%BE%8B/fig3.png" class="">
+
+<ol start="4">
+<li><strong>流体传热</strong> 场中，添加 <strong>固体1</strong> 选中管壁，添加 <strong>固体2</strong> 选中图中相变材料区域。并在 <strong>固体2</strong> 右击添加 <strong>相变材料</strong>，在 <strong>相变材料1</strong> 中参照如下设置：</li>
+</ol>
+<img src="/2021/11/21/%E7%9B%B8%E5%8F%98%E5%90%B8%E7%83%AD%E8%BF%87%E7%A8%8B%E7%AE%97%E4%BE%8B/fig4.png" class="">
+
+<ol start="5">
+<li><strong>流体传热</strong> 场中，添加 <strong>热通量</strong>，并在 <strong>热通量</strong> 中选择 <strong>对流热通量</strong> ，参照下图填写：</li>
+</ol>
+<img src="/2021/11/21/%E7%9B%B8%E5%8F%98%E5%90%B8%E7%83%AD%E8%BF%87%E7%A8%8B%E7%AE%97%E4%BE%8B/fig5.png" class="">
+
+<ol start="6">
+<li>本例计算采用 <strong>稳态</strong> 求解。</li>
+</ol>
+<h2 id="案例下载"><a href="#案例下载" class="headerlink" title="案例下载"></a>案例下载</h2><p>链接: <a href="https://pan.baidu.com/s/1beKsqgxljznqsSnCj2uNZg">https://pan.baidu.com/s/1beKsqgxljznqsSnCj2uNZg</a> 提取码: fdv5 </p>
+]]></content>
+      <tags>
+        <tag>COMSOL算例</tag>
+        <tag>流动</tag>
+        <tag>传热</tag>
+        <tag>相变</tag>
+        <tag>流固耦合</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算步之间初值继承的案例</title>
+    <url>/2021/11/19/%E8%AE%A1%E7%AE%97%E6%AD%A5%E4%B9%8B%E9%97%B4%E5%88%9D%E5%80%BC%E7%BB%A7%E6%89%BF%E7%9A%84%E6%A1%88%E4%BE%8B/</url>
+    <content><![CDATA[<h1 id="计算步之间初值的继承"><a href="#计算步之间初值的继承" class="headerlink" title="计算步之间初值的继承"></a>计算步之间初值的继承</h1><h3 id="算例下载："><a href="#算例下载：" class="headerlink" title="算例下载："></a>算例下载：</h3><p>Github链接：<a href="https://github.com/sylvesterlynn/comsol_examples/raw/main/%E8%AE%A1%E7%AE%97%E6%AD%A5%E4%B8%AD%E5%88%9D%E5%80%BC%E7%BB%A7%E6%89%BF%E7%9A%84%E6%A1%88%E4%BE%8B.mph">计算步之间初值继承的案例.mph</a></p>
+<p>百度网盘链接：链接: <a href="https://pan.baidu.com/s/1b1FlhwbjyShYrbO-YT3-JQ">https://pan.baidu.com/s/1b1FlhwbjyShYrbO-YT3-JQ</a>  提取码: 6bjn </p>
+]]></content>
+      <tags>
+        <tag>COMSOL算例</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>数据导入的案例</title>
+    <url>/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/</url>
+    <content><![CDATA[<h1 id="数据导入的案例"><a href="#数据导入的案例" class="headerlink" title="数据导入的案例"></a>数据导入的案例</h1><img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig1.png" class="">
+
+<p>有不少COMSOL小白遇到实验数据不知道如何导入算例的问题。本文中的算例将距离分别将一维、二维和三维数据导入到算例中。本例采用一个固体导热模块进行模拟计算，并尝试将三个数据文件导入到算例中。</p>
+<p>在导入实验数据时，通常在<strong>定义</strong>右击添加<strong>函数</strong>选择<strong>插值</strong>，如上图图所示。</p>
+<h2 id="导入方法"><a href="#导入方法" class="headerlink" title="导入方法"></a>导入方法</h2><ol>
+<li><p>导入一维数据$f(x)$</p>
+<p>当导入一维数组时，在<strong>插值</strong>中做如下选择，在<em>1</em>中选择<strong>局部表</strong>；<em>2</em>中的$int1$为函数名，在后面的计算中如果要调用该函数，应写为 $int1(t)$，其中 $t$ 为自变量，不一定非要是时间，也可以是 $x,y,z$，或者是自己定义的变量均可；<em>3</em>中  $t$ 列为自变量的值，$f(t)$ 列为因变量或函数的值，导入后会显示；在<em>4</em>中打开，选择自己准备好的一维数据文档，一般可采用txt文档即可，该文档可按下图设计；<em>5</em>中可以填写变元和函数的单位。</p>
+</li>
+</ol>
+<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig2.png" class="">
+
+<p>一维数据txt文档中，左边一列是变元或者自变量，例如$x$，右边一列是函数值$f(x)$。</p>
+<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig3.png" class="">
+
+<ol start="2">
+<li><p>导入二维数据$f(x,y)$</p>
+<p>导入二维数据时，同样采用 <strong>插值</strong>，<em>1</em>在<strong>数据源</strong>中选择<strong>文件</strong>；在<em>2</em>中通过<strong>浏览</strong>找到自己的二维数据，选<strong>导入</strong>即可；通常二维数据也采用txt文档；导入后COMSOL会自动识别<em>3</em>中变元数。调用该函数应为$int2(x,y)$。</p>
+</li>
+</ol>
+<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig4.png" class="">
+
+<p>   二维数据的txt文档结构如下图，其中第一列为第一个自变量，例如$x$，第二列为第二个自变量$y$，例如，第三列为函数值$f(x,y)$。</p>
+<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig5.png" class="">
+
+<ol start="3">
+<li><p>导入三维数据$f(x,y,z)$</p>
+<p>三维数据同样可以导入COMSOL，导入方法见<strong>导入二维数据</strong>，三维数据也用txt文档组织，该文档结构如下。其中第一列为第一个自变量，例如$x$；第二列为第二个自变量如 $y$，第三列为第三个自变量如 $z$，第四列为函数值 $f(x,y,z)$。</p>
+</li>
+</ol>
+ <img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig6.png" class="">
+
+<p>   大家可以自己试试看。我在下面的案例中提供了三个数组，并可以导入后与计算结果作对比。</p>
+<h2 id="案例下载"><a href="#案例下载" class="headerlink" title="案例下载"></a>案例下载</h2><p>   链接: <a href="https://pan.baidu.com/s/1jWKFGDQHq7gSyo2CD3kBhA">https://pan.baidu.com/s/1jWKFGDQHq7gSyo2CD3kBhA</a> 提取码: twfq </p>
+]]></content>
+      <tags>
+        <tag>COMSOL算例</tag>
+        <tag>传热</tag>
+        <tag>数据导入</tag>
+      </tags>
+  </entry>
+</search>

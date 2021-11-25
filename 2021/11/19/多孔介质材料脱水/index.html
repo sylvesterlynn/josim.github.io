@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"josim.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="多孔介质中水分的蒸发是食品、造纸、木材、垃圾处理等工业中的重要过程。本算例将提供一个干燥过程的算例，并且计算过程中干燥条件发生变化。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="多孔介质材料脱水">
+<meta property="og:url" content="http://josim.xyz/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/index.html">
+<meta property="og:site_name" content="JOSIM">
+<meta property="og:description" content="多孔介质中水分的蒸发是食品、造纸、木材、垃圾处理等工业中的重要过程。本算例将提供一个干燥过程的算例，并且计算过程中干燥条件发生变化。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://josim.xyz/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/fig1.png">
+<meta property="og:image" content="http://josim.xyz/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/fig2.png">
+<meta property="og:image" content="http://josim.xyz/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/fig3.png">
+<meta property="article:published_time" content="2021-11-18T17:57:44.000Z">
+<meta property="article:modified_time" content="2021-11-21T16:26:55.398Z">
+<meta property="article:author" content="李幼常">
+<meta property="article:tag" content="COMSOL算例">
+<meta property="article:tag" content="流动">
+<meta property="article:tag" content="湿蒸汽扩散">
+<meta property="article:tag" content="多孔介质">
+<meta property="article:tag" content="蒸发">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://josim.xyz/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/fig1.png">
+
+<link rel="canonical" href="http://josim.xyz/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>多孔介质材料脱水 | JOSIM</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">JOSIM</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">COMSOL初学者的案例库</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://josim.xyz/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="李幼常">
+      <meta itemprop="description" content="为COMSOL初学者提供最好用的学习案例">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="JOSIM">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          多孔介质材料脱水
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2021-11-19 01:57:44" itemprop="dateCreated datePublished" datetime="2021-11-19T01:57:44+08:00">2021-11-19</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-11-22 00:26:55" itemprop="dateModified" datetime="2021-11-22T00:26:55+08:00">2021-11-22</time>
+              </span>
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+            <div class="post-description">多孔介质中水分的蒸发是食品、造纸、木材、垃圾处理等工业中的重要过程。本算例将提供一个干燥过程的算例，并且计算过程中干燥条件发生变化。</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h2 id="多孔介质材料脱水"><a href="#多孔介质材料脱水" class="headerlink" title="多孔介质材料脱水"></a>多孔介质材料脱水</h2><p>多孔介质中水分的蒸发是食品、造纸、木材、垃圾处理等工业中的重要过程。本算例要计算的内容为，在一个空间里面，将木材的含水率从40%降到10%。过程为：先用换热器和内部风扇将木材堆加热，直至木材中心温度比表面温度低10摄氏度左右，然后将空间抽真空（0.15个大气压），直至木材中心温度降低到该压力下的沸点。</p>
+<p>在该算例中有以下几个要点：</p>
+<ul>
+<li>采用湿蒸汽扩散、湿空气传热和层流三个模块进行模拟；</li>
+<li>每个模块中都将木块设为多孔介质，其中的参数仅为计算演示，不对数据可靠性负责；</li>
+<li>该计算采用二维简化模型；</li>
+<li>计算分为两步：第一步采用高温气流将木材中水分蒸发，当中心温度比表面温度低10℃时停止，第二步停止通风，降低空间内压力，使木材中水分继续蒸发并带走热量，直至含水率继续降低。</li>
+<li>本计算仅做示例只用，其中数字与计算要求不完全相符。</li>
+</ul>
+<h3 id="设置中的注意点"><a href="#设置中的注意点" class="headerlink" title="设置中的注意点"></a>设置中的注意点</h3><ol>
+<li><p>本算例参考COMSOL官网算例 <a target="_blank" rel="noopener" href="https://cn.comsol.com/model/evaporation-in-porous-media-with-large-evaporation-rates-33731">多孔介质中的大蒸发率蒸发</a> 进行设置；</p>
+</li>
+<li><p>本算例中，在研究（study）中设置了3个计算步骤。步骤1为稳态，步骤2-3都是瞬态。COMSOL中在同一个<strong>研究</strong>里设置不同的计算步骤时，求解器中“Solution Store 1（sol2）”将用来存储每一个中间步骤的求解结果。当步骤1完成时，sol2将保存步骤1结果，默认步骤2将使用步骤1 的结果作为初始值；当步骤2 计算结束后，sol2将保存步骤2结果，步骤3将使用步骤2 的结果作为初始值。因此如果要在不同的时间之间改变边界条件，可以让求解器分别求解不同的步骤，在步骤之间调整边界条件。</p>
+</li>
+<li><p>在步骤1中，勾选<strong>层流</strong>和湿蒸汽传热模块，并在多物理场耦合中勾选<strong>非等温流</strong>。因为该蒸发过程中，水蒸气的扩散对气流的流动和传热影响非常小，因此可以先计算流动传热，并将其结果作为之后计算的初始值。实际上也可以采用全耦合求解，但是全耦合求解需要注意两个问题，第一全耦合求解的复杂程度更高，可能会容易发生发散，第二如果采用全耦合计算，各模块的边界条件应该采用函数形式，不可以直接设置一个跟初始值不一致的值。</p>
+<img src="/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/fig1.png" class=""></li>
+<li><p>在步骤2中，时间和求解器设置如下。</p>
+<img src="/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/fig2.png" class=""></li>
+<li><p>在步骤3中，时间和求解器设置如下。<strong>请注意输出时间的第一个值应当是步骤2输出时间的最后一个值。</strong></p>
+<img src="/2021/11/19/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4/fig3.png" class=""></li>
+<li><p>在本算例中，设置了阶跃函数 rm1 用来控制出口处压力的变化。</p>
+</li>
+<li><p>计算步骤简要说明如下：</p>
+<p>7.1 层流模型设置好入口流速u0，出口表压压力为0；</p>
+<p>7.2 在步骤2上右击，选择 <strong>计算到选定项</strong>；</p>
+<p>7.3 在层流模型中，将出口表压设置为 0-15000*rm1((t-50)/20);</p>
+<p>7.4 在步骤3上右击，选择 <strong>计算选定步骤</strong>。</p>
+</li>
+<li><p>在<strong>结果</strong>中，数据集选择 <strong>sol1</strong>则显示50~1000s结果，如果选择 <strong>sol2</strong> 则显示结果为0~50s结果。</p>
+</li>
+</ol>
+<h3 id="下载链接"><a href="#下载链接" class="headerlink" title="下载链接"></a>下载链接</h3><p>Github链接： <a target="_blank" rel="noopener" href="https://github.com/sylvesterlynn/comsol_examples/raw/main/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4.mph">多孔介质材料脱水.mph</a></p>
+<p>百度网盘链接： 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1CEZTySQ5ctHeJM5UrAm2qg">https://pan.baidu.com/s/1CEZTySQ5ctHeJM5UrAm2qg</a>  提取码: yxaq </p>
+
+    </div>
+
+    
+    
+    
+        <div class="reward-container">
+  <div>计算不易求打赏</div>
+  <button onclick="var qr = document.getElementById('qr'); qr.style.display = (qr.style.display === 'none') ? 'block' : 'none';">
+    打赏
+  </button>
+  <div id="qr" style="display: none;">
+      
+      <div style="display: inline-block;">
+        <img src="/images/wechatpay.png" alt="李幼常 微信支付">
+        <p>微信支付</p>
+      </div>
+
+  </div>
+</div>
+
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/COMSOL%E7%AE%97%E4%BE%8B/" rel="tag"># COMSOL算例</a>
+              <a href="/tags/%E6%B5%81%E5%8A%A8/" rel="tag"># 流动</a>
+              <a href="/tags/%E6%B9%BF%E8%92%B8%E6%B1%BD%E6%89%A9%E6%95%A3/" rel="tag"># 湿蒸汽扩散</a>
+              <a href="/tags/%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8/" rel="tag"># 多孔介质</a>
+              <a href="/tags/%E8%92%B8%E5%8F%91/" rel="tag"># 蒸发</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2021/11/19/Hellow/" rel="prev" title="Hellow">
+      <i class="fa fa-chevron-left"></i> Hellow
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2021/11/19/%E8%AE%A1%E7%AE%97%E6%AD%A5%E4%B9%8B%E9%97%B4%E5%88%9D%E5%80%BC%E7%BB%A7%E6%89%BF%E7%9A%84%E6%A1%88%E4%BE%8B/" rel="next" title="计算步之间初值继承的案例">
+      计算步之间初值继承的案例 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%A4%9A%E5%AD%94%E4%BB%8B%E8%B4%A8%E6%9D%90%E6%96%99%E8%84%B1%E6%B0%B4"><span class="nav-number">1.</span> <span class="nav-text">多孔介质材料脱水</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E4%B8%AD%E7%9A%84%E6%B3%A8%E6%84%8F%E7%82%B9"><span class="nav-number">1.1.</span> <span class="nav-text">设置中的注意点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E9%93%BE%E6%8E%A5"><span class="nav-number">1.2.</span> <span class="nav-text">下载链接</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">李幼常</p>
+  <div class="site-description" itemprop="description">为COMSOL初学者提供最好用的学习案例</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">12</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">李幼常</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : '1SAki6MPYTfz17QIV32xQUHS-gzGzoHsz',
+      appKey     : '3a8YpJhq5X0RI6aA940stQIV',
+      placeholder: "欢迎畅所欲言",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : false,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
