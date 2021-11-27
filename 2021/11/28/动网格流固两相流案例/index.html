@@ -20,20 +20,27 @@
     var CONFIG = {"hostname":"josim.xyz","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
-  <meta name="description" content="COMSOL采用有限元方法进行多物理场耦合数值模拟。在使用COMSOL做数值模拟之前应该对模拟对象和有限元方法具有基础的了解。我这里收集了一些参考书，希望可以给大家提供帮助。以下所有图书均来自Z-library。">
+  <meta name="description" content="COMSOL提供三种方法进行两相流模拟，包括相场、水平集和动网格。其中采用**动网格**的好处是避免计算气相中的速度场和压力场，表面上的力（如表面张力）和接触角可以作为边界条件直接添加到表面上，计算效率高。其缺点是无法处理任何拓扑变化，即：没有液滴破碎和自由表面形成等。本例中采用**层流**和**动网格**模拟一种高粘度流体从喷口中流出的过程。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="参考书目">
-<meta property="og:url" content="http://josim.xyz/2021/11/21/%E5%8F%82%E8%80%83%E4%B9%A6%E7%9B%AE/index.html">
+<meta property="og:title" content="动网格流固两相流案例">
+<meta property="og:url" content="http://josim.xyz/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/index.html">
 <meta property="og:site_name" content="JOSIM">
-<meta property="og:description" content="COMSOL采用有限元方法进行多物理场耦合数值模拟。在使用COMSOL做数值模拟之前应该对模拟对象和有限元方法具有基础的了解。我这里收集了一些参考书，希望可以给大家提供帮助。以下所有图书均来自Z-library。">
+<meta property="og:description" content="COMSOL提供三种方法进行两相流模拟，包括相场、水平集和动网格。其中采用**动网格**的好处是避免计算气相中的速度场和压力场，表面上的力（如表面张力）和接触角可以作为边界条件直接添加到表面上，计算效率高。其缺点是无法处理任何拓扑变化，即：没有液滴破碎和自由表面形成等。本例中采用**层流**和**动网格**模拟一种高粘度流体从喷口中流出的过程。">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2021-11-20T18:28:20.000Z">
-<meta property="article:modified_time" content="2021-11-20T19:00:57.375Z">
+<meta property="og:image" content="http://josim.xyz/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig1.png">
+<meta property="og:image" content="http://josim.xyz/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig2.png">
+<meta property="og:image" content="http://josim.xyz/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig3.png">
+<meta property="article:published_time" content="2021-11-27T17:24:41.000Z">
+<meta property="article:modified_time" content="2021-11-27T18:01:10.209Z">
 <meta property="article:author" content="李幼常">
-<meta property="article:tag" content="参考书目">
+<meta property="article:tag" content="COMSOL案例">
+<meta property="article:tag" content="动网格">
+<meta property="article:tag" content="两相流">
+<meta property="article:tag" content="高粘度流体">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://josim.xyz/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig1.png">
 
-<link rel="canonical" href="http://josim.xyz/2021/11/21/%E5%8F%82%E8%80%83%E4%B9%A6%E7%9B%AE/">
+<link rel="canonical" href="http://josim.xyz/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/">
 
 
 <script id="page-configurations">
@@ -46,7 +53,7 @@
   };
 </script>
 
-  <title>参考书目 | JOSIM</title>
+  <title>动网格流固两相流案例 | JOSIM</title>
   
 
 
@@ -190,7 +197,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://josim.xyz/2021/11/21/%E5%8F%82%E8%80%83%E4%B9%A6%E7%9B%AE/">
+    <link itemprop="mainEntityOfPage" href="http://josim.xyz/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -203,7 +210,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          参考书目
+          动网格流固两相流案例
         </h1>
 
         <div class="post-meta">
@@ -214,7 +221,7 @@
               <span class="post-meta-item-text">发表于</span>
               
 
-              <time title="创建时间：2021-11-21 02:28:20 / 修改时间：03:00:57" itemprop="dateCreated datePublished" datetime="2021-11-21T02:28:20+08:00">2021-11-21</time>
+              <time title="创建时间：2021-11-28 01:24:41 / 修改时间：02:01:10" itemprop="dateCreated datePublished" datetime="2021-11-28T01:24:41+08:00">2021-11-28</time>
             </span>
 
           
@@ -226,13 +233,13 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2021/11/21/%E5%8F%82%E8%80%83%E4%B9%A6%E7%9B%AE/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/11/21/%E5%8F%82%E8%80%83%E4%B9%A6%E7%9B%AE/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/" itemprop="commentCount"></span>
     </a>
   </span>
   
   
-            <div class="post-description">COMSOL采用有限元方法进行多物理场耦合数值模拟。在使用COMSOL做数值模拟之前应该对模拟对象和有限元方法具有基础的了解。我这里收集了一些参考书，希望可以给大家提供帮助。以下所有图书均来自Z-library。</div>
+            <div class="post-description">COMSOL提供三种方法进行两相流模拟，包括相场、水平集和动网格。其中采用**动网格**的好处是避免计算气相中的速度场和压力场，表面上的力（如表面张力）和接触角可以作为边界条件直接添加到表面上，计算效率高。其缺点是无法处理任何拓扑变化，即：没有液滴破碎和自由表面形成等。本例中采用**层流**和**动网格**模拟一种高粘度流体从喷口中流出的过程。</div>
 
         </div>
       </header>
@@ -243,17 +250,24 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h1 id="参考书目"><a href="#参考书目" class="headerlink" title="参考书目"></a>参考书目</h1><p>COMSOL采用有限元方法进行多物理场耦合数值模拟。在使用COMSOL做数值模拟之前应该对模拟对象和有限元方法具有基础的了解。我这里收集了一些参考书，希望可以给大家提供帮助。以下所有图书均来自<a target="_blank" rel="noopener" href="https://book4you.org/">Z-library</a>。你可以在本网页下载，或在Z-library网站下载，由Z-library提供图书版权。<u>如果发现我提供的以下图书有版权问题，请直接邮件联系博主。</u></p>
-<ol>
-<li>罗伯特·D·库克, 戴维·S·马尔库斯, 迈克尔·E·普利沙,等. 有限元分析的概念与应用 (第四版)[M]. 西安交通大学出版社, 2007. 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1e8QuQuWVothqwtA6YzV6WA">https://pan.baidu.com/s/1e8QuQuWVothqwtA6YzV6WA</a> 提取码: uwwa </li>
-<li>王刚, 安琳. COMSOL Multiphysics工程实践与理论仿真:多物理场数值分析技术[M]. 电子工业出版社, 2012. 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/174quuvN0EvapKEyyA6X2ew">https://pan.baidu.com/s/174quuvN0EvapKEyyA6X2ew</a> 提取码: y2m9 </li>
-<li>Layla S. Mayboudi, Geometry Creation and Import With COMSOL Multiphysics[M]. 2020. 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1xucdDMslGrZjZUfhV57qxw">https://pan.baidu.com/s/1xucdDMslGrZjZUfhV57qxw</a> 提取码: hwd5 </li>
-<li>Layla S. Mayboudi, Comsol Heat Transfer Models[M]. 2019. 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1EGtsa9QbQ4obMwopDbwdAg">https://pan.baidu.com/s/1EGtsa9QbQ4obMwopDbwdAg</a> 提取码: ya3d </li>
-<li>Armen Gulian, Shortcut to Superconductivity Superconducting Electronics via COMSOL Modeling  [M]. 2020. 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1l3vA6pxP1lpcO3zO4fupew">https://pan.baidu.com/s/1l3vA6pxP1lpcO3zO4fupew</a> 提取码: 6yr5 </li>
-<li>Tabatabaian, Mehrzad, COMSOL5 for engineers[M]. 2016.  链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/12VD05Q9la2acr-elkZ3WXw">https://pan.baidu.com/s/12VD05Q9la2acr-elkZ3WXw</a> 提取码: 3jg9 </li>
-<li>Heinrich, Juan C. Pepper, Darrell W, The finite element method  basic concepts and applications with MATLAB, MAPLE, and COMSOL[M]. 2017. 链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1_I6eRlaD7cickmP2eGuLjA">https://pan.baidu.com/s/1_I6eRlaD7cickmP2eGuLjA</a> 提取码: 6mbh </li>
+        <h1 id="动网格流固两相流案例"><a href="#动网格流固两相流案例" class="headerlink" title="动网格流固两相流案例"></a>动网格流固两相流案例</h1><img src="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig1.png" class="">
+
+<p>COMSOL提供三种方法进行两相流模拟，包括相场、水平集和动网格。其中采用<strong>动网格</strong>的好处是避免计算气相中的速度场和压力场，表面上的力（如表面张力）和接触角可以作为边界条件直接添加到表面上，计算效率高。其缺点是无法处理任何拓扑变化，即：没有液滴破碎和自由表面形成等。本例中采用<strong>层流</strong>和<strong>动网格</strong>模拟一种高粘度流体从喷口中流出的过程。</p>
+<h2 id="计算设置"><a href="#计算设置" class="headerlink" title="计算设置"></a>计算设置</h2><ol>
+<li><p>在本例中，采用二位轴对称模型进行计算，该高粘度流体的密度$\rho=1000 kg/m^3$ ，粘度设为$\mu=100 Pa\cdot s$，喷口半径为$r=0.2 mm$，为使真空接近实际情况在出口处做了半径为$0.1 mm$的倒角。</p>
+</li>
+<li><p>本例中主要设置如下，<em>1</em>将整个流体区间选为<strong>变形域</strong>，<em>2</em>将喷口壁面选为<strong>固定边界</strong>，<em>3</em>选定相应的壁面，<em>4</em>入口为速度入口，本例中设为 $U_0=1\times t  mm/s$，<em>5</em>在自由表面中选中液体表面，在其中可以同步设置表面张力模型和接触角。</p>
+</li>
 </ol>
-<h1 id="Z-library简介"><a href="#Z-library简介" class="headerlink" title="Z-library简介"></a>Z-library简介</h1><p>Z-Library 是一个数字图书馆项目，提供大量书籍、文章和其他已出版内容的免费访问。该平台于 2009 年推出，标榜自己是“世界上最大的电子书图书馆”。目前，该网站拥有超过400万本数字图书，包括公共领域的文本和版权作品。这些不同的 Z-Library 书籍和文章可以多种流行的电子书格式下载，包括 PDF 和 EPUB。提供的书籍包括小说和非小说出版物，同时包含书籍和文章有助于使其成为学生和其他学术界人士越来越受欢迎的资源。用户可以通过首页的搜索栏搜索Z Library图书和文章。这提供了按书名、作者姓名、ISBN 或 MD5 进行搜索的选项，从而非常容易找到您要查找的电子书。</p>
+<img src="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig2.png" class="">
+
+<ol start="3">
+<li><strong>动网格</strong>和<strong>自动重新划分网格</strong>设置，由于流动过程会造成网格质量下降，因此应添加<strong>自动重新划分网格</strong>，如下图所示。<em>1</em>在<strong>瞬态求解器</strong>上右击添加<strong>自动重新划分网格</strong>，在<strong>自动重新划分网格</strong>中，可以调整<em>3</em>中的条件类型，本例中采用默认的<strong>网格质量</strong>，<em>4</em>中以**最小单元质量 (comp1.spatial.minqual)**为依据，当该单元质量小于0.2时重新划分网格。</li>
+</ol>
+<img src="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig3.png" class="">
+
+<h2 id="案例下载"><a href="#案例下载" class="headerlink" title="案例下载"></a>案例下载</h2><p>   本文案例下载链接：</p>
+<p>   链接: <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1sJxmYAHFdjNsRgVXX3m8EQ">https://pan.baidu.com/s/1sJxmYAHFdjNsRgVXX3m8EQ</a> 提取码: ynmb </p>
 
     </div>
 
@@ -278,7 +292,10 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/%E5%8F%82%E8%80%83%E4%B9%A6%E7%9B%AE/" rel="tag"># 参考书目</a>
+              <a href="/tags/COMSOL%E6%A1%88%E4%BE%8B/" rel="tag"># COMSOL案例</a>
+              <a href="/tags/%E5%8A%A8%E7%BD%91%E6%A0%BC/" rel="tag"># 动网格</a>
+              <a href="/tags/%E4%B8%A4%E7%9B%B8%E6%B5%81/" rel="tag"># 两相流</a>
+              <a href="/tags/%E9%AB%98%E7%B2%98%E5%BA%A6%E6%B5%81%E4%BD%93/" rel="tag"># 高粘度流体</a>
           </div>
 
         
@@ -287,13 +304,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/11/19/%E8%AE%A1%E7%AE%97%E6%AD%A5%E4%B9%8B%E9%97%B4%E5%88%9D%E5%80%BC%E7%BB%A7%E6%89%BF%E7%9A%84%E6%A1%88%E4%BE%8B/" rel="prev" title="计算步之间初值继承的案例">
-      <i class="fa fa-chevron-left"></i> 计算步之间初值继承的案例
+    <a href="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/" rel="prev" title="数据导入的案例">
+      <i class="fa fa-chevron-left"></i> 数据导入的案例
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/11/21/%E4%B8%89%E7%BB%B4%E7%9B%96%E6%9D%BF%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%E6%A1%88%E4%BE%8B/" rel="next" title="三维盖板圆周运动案例">
-      三维盖板圆周运动案例 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -353,7 +367,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8F%82%E8%80%83%E4%B9%A6%E7%9B%AE"><span class="nav-number">1.</span> <span class="nav-text">参考书目</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Z-library%E7%AE%80%E4%BB%8B"><span class="nav-number">2.</span> <span class="nav-text">Z-library简介</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B"><span class="nav-number">1.</span> <span class="nav-text">动网格流固两相流案例</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%AE%A1%E7%AE%97%E8%AE%BE%E7%BD%AE"><span class="nav-number">1.1.</span> <span class="nav-text">计算设置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A1%88%E4%BE%8B%E4%B8%8B%E8%BD%BD"><span class="nav-number">1.2.</span> <span class="nav-text">案例下载</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -464,6 +478,61 @@
   
 
   
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+          load: ['[tex]/mhchem'],
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+          packages: {'[+]': ['mhchem']},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
 
   
 
