@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Hellow</title>
-    <url>/2021/11/19/Hellow/</url>
-    <content><![CDATA[<p>本站为个人建立，旨在为COMSOL新手提供便于学习的案例。</p>
-<p>本站所有案例均使用COMSOL试用版计算，所有案例仅用于学习交流，请下载后尽快删除，JOSIM不为任何人使用COMSOL软件提供版权责任。</p>
-<p>如果有疑问请发邮件至<a href="mailto:&#56;&#x34;&#x37;&#57;&#53;&#x34;&#x30;&#55;&#x36;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#109;">&#56;&#x34;&#x37;&#57;&#53;&#x34;&#x30;&#55;&#x36;&#x40;&#113;&#x71;&#46;&#x63;&#x6f;&#109;</a>，或在文章下留言，感谢大家支持。</p>
-<p>如果对你有用，请扫描如下二维码支持本项目，感谢打赏！</p>
-]]></content>
-  </entry>
-  <entry>
-    <title>参考书目</title>
-    <url>/2021/11/21/%E5%8F%82%E8%80%83%E4%B9%A6%E7%9B%AE/</url>
-    <content><![CDATA[<h1 id="参考书目"><a href="#参考书目" class="headerlink" title="参考书目"></a>参考书目</h1><p>COMSOL采用有限元方法进行多物理场耦合数值模拟。在使用COMSOL做数值模拟之前应该对模拟对象和有限元方法具有基础的了解。我这里收集了一些参考书，希望可以给大家提供帮助。以下所有图书均来自<a href="https://book4you.org/">Z-library</a>。你可以在本网页下载，或在Z-library网站下载，由Z-library提供图书版权。<u>如果发现我提供的以下图书有版权问题，请直接邮件联系博主。</u></p>
-<ol>
-<li>罗伯特·D·库克, 戴维·S·马尔库斯, 迈克尔·E·普利沙,等. 有限元分析的概念与应用 (第四版)[M]. 西安交通大学出版社, 2007. 链接: <a href="https://pan.baidu.com/s/1e8QuQuWVothqwtA6YzV6WA">https://pan.baidu.com/s/1e8QuQuWVothqwtA6YzV6WA</a> 提取码: uwwa </li>
-<li>王刚, 安琳. COMSOL Multiphysics工程实践与理论仿真:多物理场数值分析技术[M]. 电子工业出版社, 2012. 链接: <a href="https://pan.baidu.com/s/174quuvN0EvapKEyyA6X2ew">https://pan.baidu.com/s/174quuvN0EvapKEyyA6X2ew</a> 提取码: y2m9 </li>
-<li>Layla S. Mayboudi, Geometry Creation and Import With COMSOL Multiphysics[M]. 2020. 链接: <a href="https://pan.baidu.com/s/1xucdDMslGrZjZUfhV57qxw">https://pan.baidu.com/s/1xucdDMslGrZjZUfhV57qxw</a> 提取码: hwd5 </li>
-<li>Layla S. Mayboudi, Comsol Heat Transfer Models[M]. 2019. 链接: <a href="https://pan.baidu.com/s/1EGtsa9QbQ4obMwopDbwdAg">https://pan.baidu.com/s/1EGtsa9QbQ4obMwopDbwdAg</a> 提取码: ya3d </li>
-<li>Armen Gulian, Shortcut to Superconductivity Superconducting Electronics via COMSOL Modeling  [M]. 2020. 链接: <a href="https://pan.baidu.com/s/1l3vA6pxP1lpcO3zO4fupew">https://pan.baidu.com/s/1l3vA6pxP1lpcO3zO4fupew</a> 提取码: 6yr5 </li>
-<li>Tabatabaian, Mehrzad, COMSOL5 for engineers[M]. 2016.  链接: <a href="https://pan.baidu.com/s/12VD05Q9la2acr-elkZ3WXw">https://pan.baidu.com/s/12VD05Q9la2acr-elkZ3WXw</a> 提取码: 3jg9 </li>
-<li>Heinrich, Juan C. Pepper, Darrell W, The finite element method  basic concepts and applications with MATLAB, MAPLE, and COMSOL[M]. 2017. 链接: <a href="https://pan.baidu.com/s/1_I6eRlaD7cickmP2eGuLjA">https://pan.baidu.com/s/1_I6eRlaD7cickmP2eGuLjA</a> 提取码: 6mbh </li>
-</ol>
-<h1 id="Z-library简介"><a href="#Z-library简介" class="headerlink" title="Z-library简介"></a>Z-library简介</h1><p>Z-Library 是一个数字图书馆项目，提供大量书籍、文章和其他已出版内容的免费访问。该平台于 2009 年推出，标榜自己是“世界上最大的电子书图书馆”。目前，该网站拥有超过400万本数字图书，包括公共领域的文本和版权作品。这些不同的 Z-Library 书籍和文章可以多种流行的电子书格式下载，包括 PDF 和 EPUB。提供的书籍包括小说和非小说出版物，同时包含书籍和文章有助于使其成为学生和其他学术界人士越来越受欢迎的资源。用户可以通过首页的搜索栏搜索Z Library图书和文章。这提供了按书名、作者姓名、ISBN 或 MD5 进行搜索的选项，从而非常容易找到您要查找的电子书。</p>
-]]></content>
-      <tags>
-        <tag>参考书目</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>三维盖板圆周运动案例</title>
     <url>/2021/11/21/%E4%B8%89%E7%BB%B4%E7%9B%96%E6%9D%BF%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%E6%A1%88%E4%BE%8B/</url>
     <content><![CDATA[<h1 id="三维盖板圆周运动案例"><a href="#三维盖板圆周运动案例" class="headerlink" title="三维盖板圆周运动案例"></a>三维盖板圆周运动案例</h1><img src="/2021/11/21/%E4%B8%89%E7%BB%B4%E7%9B%96%E6%9D%BF%E5%9C%86%E5%91%A8%E8%BF%90%E5%8A%A8%E6%A1%88%E4%BE%8B/fig1.png" class="">
@@ -53,6 +25,66 @@
         <tag>流动</tag>
         <tag>壁移动</tag>
         <tag>层流</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Hellow</title>
+    <url>/2021/11/19/Hellow/</url>
+    <content><![CDATA[<p>本站为个人建立，旨在为COMSOL新手提供便于学习的案例。</p>
+<p>本站所有案例均使用COMSOL试用版计算，所有案例仅用于学习交流，请下载后尽快删除，JOSIM不为任何人使用COMSOL软件提供版权责任。</p>
+<p>如果有疑问请发邮件至<a href="mailto:&#56;&#52;&#x37;&#57;&#x35;&#52;&#x30;&#x37;&#x36;&#64;&#113;&#113;&#x2e;&#99;&#111;&#x6d;">&#56;&#52;&#x37;&#57;&#x35;&#52;&#x30;&#x37;&#x36;&#64;&#113;&#113;&#x2e;&#99;&#111;&#x6d;</a>，或在文章下留言，感谢大家支持。</p>
+<p>如果对你有用，请扫描如下二维码支持本项目，感谢打赏！</p>
+]]></content>
+  </entry>
+  <entry>
+    <title>参考书目</title>
+    <url>/2021/11/21/%E5%8F%82%E8%80%83%E4%B9%A6%E7%9B%AE/</url>
+    <content><![CDATA[<h1 id="参考书目"><a href="#参考书目" class="headerlink" title="参考书目"></a>参考书目</h1><p>COMSOL采用有限元方法进行多物理场耦合数值模拟。在使用COMSOL做数值模拟之前应该对模拟对象和有限元方法具有基础的了解。我这里收集了一些参考书，希望可以给大家提供帮助。以下所有图书均来自<a href="https://book4you.org/">Z-library</a>。你可以在本网页下载，或在Z-library网站下载，由Z-library提供图书版权。<u>如果发现我提供的以下图书有版权问题，请直接邮件联系博主。</u></p>
+<ol>
+<li>罗伯特·D·库克, 戴维·S·马尔库斯, 迈克尔·E·普利沙,等. 有限元分析的概念与应用 (第四版)[M]. 西安交通大学出版社, 2007. 链接: <a href="https://pan.baidu.com/s/1e8QuQuWVothqwtA6YzV6WA">https://pan.baidu.com/s/1e8QuQuWVothqwtA6YzV6WA</a> 提取码: uwwa </li>
+<li>王刚, 安琳. COMSOL Multiphysics工程实践与理论仿真:多物理场数值分析技术[M]. 电子工业出版社, 2012. 链接: <a href="https://pan.baidu.com/s/174quuvN0EvapKEyyA6X2ew">https://pan.baidu.com/s/174quuvN0EvapKEyyA6X2ew</a> 提取码: y2m9 </li>
+<li>Layla S. Mayboudi, Geometry Creation and Import With COMSOL Multiphysics[M]. 2020. 链接: <a href="https://pan.baidu.com/s/1xucdDMslGrZjZUfhV57qxw">https://pan.baidu.com/s/1xucdDMslGrZjZUfhV57qxw</a> 提取码: hwd5 </li>
+<li>Layla S. Mayboudi, Comsol Heat Transfer Models[M]. 2019. 链接: <a href="https://pan.baidu.com/s/1EGtsa9QbQ4obMwopDbwdAg">https://pan.baidu.com/s/1EGtsa9QbQ4obMwopDbwdAg</a> 提取码: ya3d </li>
+<li>Armen Gulian, Shortcut to Superconductivity Superconducting Electronics via COMSOL Modeling  [M]. 2020. 链接: <a href="https://pan.baidu.com/s/1l3vA6pxP1lpcO3zO4fupew">https://pan.baidu.com/s/1l3vA6pxP1lpcO3zO4fupew</a> 提取码: 6yr5 </li>
+<li>Tabatabaian, Mehrzad, COMSOL5 for engineers[M]. 2016.  链接: <a href="https://pan.baidu.com/s/12VD05Q9la2acr-elkZ3WXw">https://pan.baidu.com/s/12VD05Q9la2acr-elkZ3WXw</a> 提取码: 3jg9 </li>
+<li>Heinrich, Juan C. Pepper, Darrell W, The finite element method  basic concepts and applications with MATLAB, MAPLE, and COMSOL[M]. 2017. 链接: <a href="https://pan.baidu.com/s/1_I6eRlaD7cickmP2eGuLjA">https://pan.baidu.com/s/1_I6eRlaD7cickmP2eGuLjA</a> 提取码: 6mbh </li>
+</ol>
+<h1 id="Z-library简介"><a href="#Z-library简介" class="headerlink" title="Z-library简介"></a>Z-library简介</h1><p>Z-Library 是一个数字图书馆项目，提供大量书籍、文章和其他已出版内容的免费访问。该平台于 2009 年推出，标榜自己是“世界上最大的电子书图书馆”。目前，该网站拥有超过400万本数字图书，包括公共领域的文本和版权作品。这些不同的 Z-Library 书籍和文章可以多种流行的电子书格式下载，包括 PDF 和 EPUB。提供的书籍包括小说和非小说出版物，同时包含书籍和文章有助于使其成为学生和其他学术界人士越来越受欢迎的资源。用户可以通过首页的搜索栏搜索Z Library图书和文章。这提供了按书名、作者姓名、ISBN 或 MD5 进行搜索的选项，从而非常容易找到您要查找的电子书。</p>
+]]></content>
+      <tags>
+        <tag>参考书目</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>动网格流固两相流案例</title>
+    <url>/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/</url>
+    <content><![CDATA[<h1 id="动网格流固两相流案例"><a href="#动网格流固两相流案例" class="headerlink" title="动网格流固两相流案例"></a>动网格流固两相流案例</h1><img src="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig1.png" class="">
+
+<p>COMSOL提供三种方法进行两相流模拟，包括相场、水平集和动网格。其中采用<strong>动网格</strong>的好处是避免计算气相中的速度场和压力场，表面上的力（如表面张力）和接触角可以作为边界条件直接添加到表面上，计算效率高。其缺点是无法处理任何拓扑变化，即：没有液滴破碎和自由表面形成等。本例中采用<strong>层流</strong>和<strong>动网格</strong>模拟一种高粘度流体从喷口中流出的过程。</p>
+<h2 id="计算设置"><a href="#计算设置" class="headerlink" title="计算设置"></a>计算设置</h2><ol>
+<li><p>在本例中，采用二位轴对称模型进行计算，该高粘度流体的密度$\rho=1000 kg/m^3$ ，粘度设为$\mu=100 Pa\cdot s$，喷口半径为$r=0.2 mm$，为使真空接近实际情况在出口处做了半径为$0.1 mm$的倒角。</p>
+</li>
+<li><p>本例中主要设置如下，<em>1</em>将整个流体区间选为<strong>变形域</strong>，<em>2</em>将喷口壁面选为<strong>固定边界</strong>，<em>3</em>选定相应的壁面，<em>4</em>入口为速度入口，本例中设为 $U_0=1\times t  mm/s$，<em>5</em>在自由表面中选中液体表面，在其中可以同步设置表面张力模型和接触角。</p>
+</li>
+</ol>
+<img src="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig2.png" class="">
+
+<ol start="3">
+<li><strong>动网格</strong>和<strong>自动重新划分网格</strong>设置，由于流动过程会造成网格质量下降，因此应添加<strong>自动重新划分网格</strong>，如下图所示。<em>1</em>在<strong>瞬态求解器</strong>上右击添加<strong>自动重新划分网格</strong>，在<strong>自动重新划分网格</strong>中，可以调整<em>3</em>中的条件类型，本例中采用默认的<strong>网格质量</strong>，<em>4</em>中以**最小单元质量 (comp1.spatial.minqual)**为依据，当该单元质量小于0.2时重新划分网格。</li>
+</ol>
+<img src="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig3.png" class="">
+
+<p>效果图如下</p>
+<img src="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/%E4%B8%A4%E7%9B%B8%E6%B5%81.gif" class="">
+
+<h2 id="案例下载"><a href="#案例下载" class="headerlink" title="案例下载"></a>案例下载</h2><p>   本文案例下载链接：</p>
+<p>   链接: <a href="https://pan.baidu.com/s/1sJxmYAHFdjNsRgVXX3m8EQ">https://pan.baidu.com/s/1sJxmYAHFdjNsRgVXX3m8EQ</a> 提取码: ynmb </p>
+]]></content>
+      <tags>
+        <tag>COMSOL案例</tag>
+        <tag>动网格</tag>
+        <tag>两相流</tag>
+        <tag>高粘度流体</tag>
       </tags>
   </entry>
   <entry>
@@ -101,6 +133,59 @@
       </tags>
   </entry>
   <entry>
+    <title>数据导入的案例</title>
+    <url>/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/</url>
+    <content><![CDATA[<h1 id="数据导入的案例"><a href="#数据导入的案例" class="headerlink" title="数据导入的案例"></a>数据导入的案例</h1><img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig1.png" class="">
+
+<p>有不少COMSOL小白遇到实验数据不知道如何导入算例的问题。本文中的算例将距离分别将一维、二维和三维数据导入到算例中。本例采用一个固体导热模块进行模拟计算，并尝试将三个数据文件导入到算例中。</p>
+<p>在导入实验数据时，通常在<strong>定义</strong>右击添加<strong>函数</strong>选择<strong>插值</strong>，如上图图所示。</p>
+<h2 id="导入方法"><a href="#导入方法" class="headerlink" title="导入方法"></a>导入方法</h2><ol>
+<li><p>导入一维数据$f(x)$</p>
+<p>当导入一维数组时，在<strong>插值</strong>中做如下选择，在<em>1</em>中选择<strong>局部表</strong>；<em>2</em>中的$int1$为函数名，在后面的计算中如果要调用该函数，应写为 $int1(t)$，其中 $t$ 为自变量，不一定非要是时间，也可以是 $x,y,z$，或者是自己定义的变量均可；<em>3</em>中  $t$ 列为自变量的值，$f(t)$ 列为因变量或函数的值，导入后会显示；在<em>4</em>中打开，选择自己准备好的一维数据文档，一般可采用txt文档即可，该文档可按下图设计；<em>5</em>中可以填写变元和函数的单位。</p>
+</li>
+</ol>
+<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig2.png" class="">
+
+<p>一维数据txt文档中，左边一列是变元或者自变量，例如$x$，右边一列是函数值$f(x)$。</p>
+<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig3.png" class="">
+
+<ol start="2">
+<li><p>导入二维数据$f(x,y)$</p>
+<p>导入二维数据时，同样采用 <strong>插值</strong>，<em>1</em>在<strong>数据源</strong>中选择<strong>文件</strong>；在<em>2</em>中通过<strong>浏览</strong>找到自己的二维数据，选<strong>导入</strong>即可；通常二维数据也采用txt文档；导入后COMSOL会自动识别<em>3</em>中变元数。调用该函数应为$int2(x,y)$。</p>
+</li>
+</ol>
+<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig4.png" class="">
+
+<p>   二维数据的txt文档结构如下图，其中第一列为第一个自变量，例如$x$，第二列为第二个自变量$y$，例如，第三列为函数值$f(x,y)$。</p>
+<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig5.png" class="">
+
+<ol start="3">
+<li><p>导入三维数据$f(x,y,z)$</p>
+<p>三维数据同样可以导入COMSOL，导入方法见<strong>导入二维数据</strong>，三维数据也用txt文档组织，该文档结构如下。其中第一列为第一个自变量，例如$x$；第二列为第二个自变量如 $y$，第三列为第三个自变量如 $z$，第四列为函数值 $f(x,y,z)$。</p>
+</li>
+</ol>
+ <img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig6.png" class="">
+
+<p>   大家可以自己试试看。我在下面的案例中提供了三个数组，并可以导入后与计算结果作对比。</p>
+<h2 id="案例下载"><a href="#案例下载" class="headerlink" title="案例下载"></a>案例下载</h2><p>   链接: <a href="https://pan.baidu.com/s/1jWKFGDQHq7gSyo2CD3kBhA">https://pan.baidu.com/s/1jWKFGDQHq7gSyo2CD3kBhA</a> 提取码: twfq </p>
+]]></content>
+      <tags>
+        <tag>COMSOL算例</tag>
+        <tag>数据导入</tag>
+        <tag>传热</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>计算步之间初值继承的案例</title>
+    <url>/2021/11/19/%E8%AE%A1%E7%AE%97%E6%AD%A5%E4%B9%8B%E9%97%B4%E5%88%9D%E5%80%BC%E7%BB%A7%E6%89%BF%E7%9A%84%E6%A1%88%E4%BE%8B/</url>
+    <content><![CDATA[<h1 id="计算步之间初值的继承"><a href="#计算步之间初值的继承" class="headerlink" title="计算步之间初值的继承"></a>计算步之间初值的继承</h1><h3 id="算例下载："><a href="#算例下载：" class="headerlink" title="算例下载："></a>算例下载：</h3><p>Github链接：<a href="https://github.com/sylvesterlynn/comsol_examples/raw/main/%E8%AE%A1%E7%AE%97%E6%AD%A5%E4%B8%AD%E5%88%9D%E5%80%BC%E7%BB%A7%E6%89%BF%E7%9A%84%E6%A1%88%E4%BE%8B.mph">计算步之间初值继承的案例.mph</a></p>
+<p>百度网盘链接：链接: <a href="https://pan.baidu.com/s/1b1FlhwbjyShYrbO-YT3-JQ">https://pan.baidu.com/s/1b1FlhwbjyShYrbO-YT3-JQ</a>  提取码: 6bjn </p>
+]]></content>
+      <tags>
+        <tag>COMSOL算例</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>相变吸热过程算例</title>
     <url>/2021/11/21/%E7%9B%B8%E5%8F%98%E5%90%B8%E7%83%AD%E8%BF%87%E7%A8%8B%E7%AE%97%E4%BE%8B/</url>
     <content><![CDATA[<h1 id="相变吸热过程算例"><a href="#相变吸热过程算例" class="headerlink" title="相变吸热过程算例"></a>相变吸热过程算例</h1><img src="/2021/11/21/%E7%9B%B8%E5%8F%98%E5%90%B8%E7%83%AD%E8%BF%87%E7%A8%8B%E7%AE%97%E4%BE%8B/fig1.png" class="">
@@ -143,88 +228,19 @@
       </tags>
   </entry>
   <entry>
-    <title>计算步之间初值继承的案例</title>
-    <url>/2021/11/19/%E8%AE%A1%E7%AE%97%E6%AD%A5%E4%B9%8B%E9%97%B4%E5%88%9D%E5%80%BC%E7%BB%A7%E6%89%BF%E7%9A%84%E6%A1%88%E4%BE%8B/</url>
-    <content><![CDATA[<h1 id="计算步之间初值的继承"><a href="#计算步之间初值的继承" class="headerlink" title="计算步之间初值的继承"></a>计算步之间初值的继承</h1><h3 id="算例下载："><a href="#算例下载：" class="headerlink" title="算例下载："></a>算例下载：</h3><p>Github链接：<a href="https://github.com/sylvesterlynn/comsol_examples/raw/main/%E8%AE%A1%E7%AE%97%E6%AD%A5%E4%B8%AD%E5%88%9D%E5%80%BC%E7%BB%A7%E6%89%BF%E7%9A%84%E6%A1%88%E4%BE%8B.mph">计算步之间初值继承的案例.mph</a></p>
-<p>百度网盘链接：链接: <a href="https://pan.baidu.com/s/1b1FlhwbjyShYrbO-YT3-JQ">https://pan.baidu.com/s/1b1FlhwbjyShYrbO-YT3-JQ</a>  提取码: 6bjn </p>
+    <title>Lxcat与等离子体碰撞截面输入文档</title>
+    <url>/2021/12/07/Lxcat%E4%B8%8E%E7%AD%89%E7%A6%BB%E5%AD%90%E4%BD%93%E7%A2%B0%E6%92%9E%E6%88%AA%E9%9D%A2%E8%BE%93%E5%85%A5%E6%96%87%E6%A1%A3/</url>
+    <content><![CDATA[<h1 id="Lxcat数据与等离子体碰撞截面"><a href="#Lxcat数据与等离子体碰撞截面" class="headerlink" title="Lxcat数据与等离子体碰撞截面"></a>Lxcat数据与等离子体碰撞截面</h1><p>在COMSOL中做等离子体计算时，经常要用到电子碰撞截面。Lxcat数据库整理了大量电子碰撞截面数据。但是如果将Lxcat数据改写成COMSOL碰撞截面输入文档，很多同学不熟悉。下面是我给一个同学做的视频，可以供大家参考。</p>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><p>Lxcat地址：<a href="https://us.lxcat.net/home/">https://us.lxcat.net/home/</a></p>
+<p>链接: <a href="https://pan.baidu.com/s/1dlI0AC3In7r-xd5G7zZmVw">https://pan.baidu.com/s/1dlI0AC3In7r-xd5G7zZmVw</a> 提取码: 2wby </p>
 ]]></content>
       <tags>
-        <tag>COMSOL算例</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>数据导入的案例</title>
-    <url>/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/</url>
-    <content><![CDATA[<h1 id="数据导入的案例"><a href="#数据导入的案例" class="headerlink" title="数据导入的案例"></a>数据导入的案例</h1><img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig1.png" class="">
-
-<p>有不少COMSOL小白遇到实验数据不知道如何导入算例的问题。本文中的算例将距离分别将一维、二维和三维数据导入到算例中。本例采用一个固体导热模块进行模拟计算，并尝试将三个数据文件导入到算例中。</p>
-<p>在导入实验数据时，通常在<strong>定义</strong>右击添加<strong>函数</strong>选择<strong>插值</strong>，如上图图所示。</p>
-<h2 id="导入方法"><a href="#导入方法" class="headerlink" title="导入方法"></a>导入方法</h2><ol>
-<li><p>导入一维数据$f(x)$</p>
-<p>当导入一维数组时，在<strong>插值</strong>中做如下选择，在<em>1</em>中选择<strong>局部表</strong>；<em>2</em>中的$int1$为函数名，在后面的计算中如果要调用该函数，应写为 $int1(t)$，其中 $t$ 为自变量，不一定非要是时间，也可以是 $x,y,z$，或者是自己定义的变量均可；<em>3</em>中  $t$ 列为自变量的值，$f(t)$ 列为因变量或函数的值，导入后会显示；在<em>4</em>中打开，选择自己准备好的一维数据文档，一般可采用txt文档即可，该文档可按下图设计；<em>5</em>中可以填写变元和函数的单位。</p>
-</li>
-</ol>
-<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig2.png" class="">
-
-<p>一维数据txt文档中，左边一列是变元或者自变量，例如$x$，右边一列是函数值$f(x)$。</p>
-<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig3.png" class="">
-
-<ol start="2">
-<li><p>导入二维数据$f(x,y)$</p>
-<p>导入二维数据时，同样采用 <strong>插值</strong>，<em>1</em>在<strong>数据源</strong>中选择<strong>文件</strong>；在<em>2</em>中通过<strong>浏览</strong>找到自己的二维数据，选<strong>导入</strong>即可；通常二维数据也采用txt文档；导入后COMSOL会自动识别<em>3</em>中变元数。调用该函数应为$int2(x,y)$。</p>
-</li>
-</ol>
-<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig4.png" class="">
-
-<p>   二维数据的txt文档结构如下图，其中第一列为第一个自变量，例如$x$，第二列为第二个自变量$y$，例如，第三列为函数值$f(x,y)$。</p>
-<img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig5.png" class="">
-
-<ol start="3">
-<li><p>导入三维数据$f(x,y,z)$</p>
-<p>三维数据同样可以导入COMSOL，导入方法见<strong>导入二维数据</strong>，三维数据也用txt文档组织，该文档结构如下。其中第一列为第一个自变量，例如$x$；第二列为第二个自变量如 $y$，第三列为第三个自变量如 $z$，第四列为函数值 $f(x,y,z)$。</p>
-</li>
-</ol>
- <img src="/2021/11/26/%E6%95%B0%E6%8D%AE%E5%AF%BC%E5%85%A5%E7%9A%84%E6%A1%88%E4%BE%8B/fig6.png" class="">
-
-<p>   大家可以自己试试看。我在下面的案例中提供了三个数组，并可以导入后与计算结果作对比。</p>
-<h2 id="案例下载"><a href="#案例下载" class="headerlink" title="案例下载"></a>案例下载</h2><p>   链接: <a href="https://pan.baidu.com/s/1jWKFGDQHq7gSyo2CD3kBhA">https://pan.baidu.com/s/1jWKFGDQHq7gSyo2CD3kBhA</a> 提取码: twfq </p>
-]]></content>
-      <tags>
-        <tag>COMSOL算例</tag>
-        <tag>传热</tag>
-        <tag>数据导入</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>动网格流固两相流案例</title>
-    <url>/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/</url>
-    <content><![CDATA[<h1 id="动网格流固两相流案例"><a href="#动网格流固两相流案例" class="headerlink" title="动网格流固两相流案例"></a>动网格流固两相流案例</h1><img src="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig1.png" class="">
-
-<p>COMSOL提供三种方法进行两相流模拟，包括相场、水平集和动网格。其中采用<strong>动网格</strong>的好处是避免计算气相中的速度场和压力场，表面上的力（如表面张力）和接触角可以作为边界条件直接添加到表面上，计算效率高。其缺点是无法处理任何拓扑变化，即：没有液滴破碎和自由表面形成等。本例中采用<strong>层流</strong>和<strong>动网格</strong>模拟一种高粘度流体从喷口中流出的过程。</p>
-<h2 id="计算设置"><a href="#计算设置" class="headerlink" title="计算设置"></a>计算设置</h2><ol>
-<li><p>在本例中，采用二位轴对称模型进行计算，该高粘度流体的密度$\rho=1000 kg/m^3$ ，粘度设为$\mu=100 Pa\cdot s$，喷口半径为$r=0.2 mm$，为使真空接近实际情况在出口处做了半径为$0.1 mm$的倒角。</p>
-</li>
-<li><p>本例中主要设置如下，<em>1</em>将整个流体区间选为<strong>变形域</strong>，<em>2</em>将喷口壁面选为<strong>固定边界</strong>，<em>3</em>选定相应的壁面，<em>4</em>入口为速度入口，本例中设为 $U_0=1\times t  mm/s$，<em>5</em>在自由表面中选中液体表面，在其中可以同步设置表面张力模型和接触角。</p>
-</li>
-</ol>
-<img src="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig2.png" class="">
-
-<ol start="3">
-<li><strong>动网格</strong>和<strong>自动重新划分网格</strong>设置，由于流动过程会造成网格质量下降，因此应添加<strong>自动重新划分网格</strong>，如下图所示。<em>1</em>在<strong>瞬态求解器</strong>上右击添加<strong>自动重新划分网格</strong>，在<strong>自动重新划分网格</strong>中，可以调整<em>3</em>中的条件类型，本例中采用默认的<strong>网格质量</strong>，<em>4</em>中以**最小单元质量 (comp1.spatial.minqual)**为依据，当该单元质量小于0.2时重新划分网格。</li>
-</ol>
-<img src="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/fig3.png" class="">
-
-<p>效果图如下</p>
-<img src="/2021/11/28/%E5%8A%A8%E7%BD%91%E6%A0%BC%E6%B5%81%E5%9B%BA%E4%B8%A4%E7%9B%B8%E6%B5%81%E6%A1%88%E4%BE%8B/%E4%B8%A4%E7%9B%B8%E6%B5%81.gif" class="">
-
-<h2 id="案例下载"><a href="#案例下载" class="headerlink" title="案例下载"></a>案例下载</h2><p>   本文案例下载链接：</p>
-<p>   链接: <a href="https://pan.baidu.com/s/1sJxmYAHFdjNsRgVXX3m8EQ">https://pan.baidu.com/s/1sJxmYAHFdjNsRgVXX3m8EQ</a> 提取码: ynmb </p>
-]]></content>
-      <tags>
-        <tag>COMSOL案例</tag>
-        <tag>动网格</tag>
-        <tag>两相流</tag>
-        <tag>高粘度流体</tag>
+        <tag>COMSOL</tag>
+        <tag>等离子体</tag>
+        <tag>碰撞截面</tag>
+        <tag>Lxcat</tag>
+        <tag>plasma</tag>
+        <tag>输入文档</tag>
       </tags>
   </entry>
 </search>
